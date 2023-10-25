@@ -1,6 +1,7 @@
 # MS-Rewards-Farmer-Docker
 A dockerized M$ Rewards Point Farmer
 
+[![MS-Rewards-Farmer-Docker build and push](https://github.com/LtCMDstone/MS-Rewards-Farmer-Docker/actions/workflows/docker-image.yml/badge.svg?branch=main)]
 
 ## 📖 Table of Contents
   * [Table of Contents](#---table-of-contents)
@@ -17,13 +18,12 @@ A dockerized M$ Rewards Point Farmer
     + [Issues](#issues)
 
 ## Description
-todo
+This is a dockerized version of **@klept0**'s fork of the MS-Rewards-Farmer (intially coded by **@charlesbel**) to automatically get points for the MS Rewards program and does all the tasks for you (playing quizzes, searches...)
+
+It runs completly headless in a docker enviroment with google chrome and xvfb as virtual display
 
 ## Getting started
-Examples to get the container running.
-
-Table of usable volumes can be found here [Volume mapping](#volume-mapping)
-Table of enviroment variables that can be used can be found over here [ENV variables](#env-variables)
+Examples how to get the container running.
 
 ### accounts.json
    create the accounts.json file with your data
