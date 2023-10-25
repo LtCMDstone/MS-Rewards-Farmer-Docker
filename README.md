@@ -93,7 +93,7 @@ services:
 
 5. After the container exits with an error, go to your appdata share of the bot and delete the created folder accounts.json and create the accounts.json file instead, like described above [accounts.json](#accounts.json)    
 
-6. restart container should work and farm points for you
+6. restart the container and it should work and farm points for you
 
 ### crontab
 I recommend to automatically start the container via cron (Unraid: User Scripts Plugin) with a little script to add a random time so the bot doesn't start always at the same time.
