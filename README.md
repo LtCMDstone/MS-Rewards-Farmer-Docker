@@ -18,7 +18,7 @@ A dockerized M$ Rewards Point Farmer
     + [Issues](#issues)
 
 ## Description
-This is a dockerized version of **@klept0**'s fork of the MS-Rewards-Farmer (intially coded by **@charlesbel**) to automatically get points for the MS Rewards program and does all the tasks for you (playing quizzes, searches...)
+This is a dockerized version of [**@klept0**](https://github.com/klept0)'s fork of the MS-Rewards-Farmer (intially coded by [**@charlesbel**](https://github.com/charlesbel)) to automatically get points for the MS Rewards program and does all the tasks for you (playing quizzes, searches...)
 
 It runs completly headless in a docker enviroment with google chrome and xvfb as virtual display
 
