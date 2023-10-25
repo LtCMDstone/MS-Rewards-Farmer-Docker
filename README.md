@@ -1,7 +1,7 @@
 # MS-Rewards-Farmer-Docker
 A dockerized M$ Rewards Point Farmer
 
-[![MS-Rewards-Farmer-Docker build and push](https://github.com/LtCMDstone/MS-Rewards-Farmer-Docker/actions/workflows/docker-image.yml/badge.svg?branch=main)]
+![MS-Rewards-Farmer-Docker build and push](https://github.com/LtCMDstone/MS-Rewards-Farmer-Docker/actions/workflows/docker-image.yml/badge.svg?branch=main)
 
 ## 📖 Table of Contents
   * [Table of Contents](#---table-of-contents)
