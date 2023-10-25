@@ -1,6 +1,10 @@
 # MS-Rewards-Farmer-Docker
 A dockerized M$ Rewards Point Farmer
 
+![x](https://badgen.net/github/stars/ltcmdstone/ms-rewards-farmer-docker?icon=github)
+![x](https://badgen.net/github/last-commit/ltcmdstone/ms-rewards-farmer-docker?icon=github)
+![x](https://badgen.net/github/open-issues/ltcmdstone/ms-rewards-farmer-docker?icon=github)
+![x](https://badgen.net/github/open-prs/ltcmdstone/ms-rewards-farmer-docker?icon=github)
 ![MS-Rewards-Farmer-Docker build and push](https://github.com/LtCMDstone/MS-Rewards-Farmer-Docker/actions/workflows/docker-image.yml/badge.svg?branch=main)
 
 ## 📖 Table of Contents
