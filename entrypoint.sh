@@ -17,7 +17,7 @@ rm -rf /tmp/.X*-lock
 # setting the parameter from enviroment variables
 PARAMS=""
 
-if [ ! -z "$MSG_VISIBLE" ] && [ $MSG_VISIBLE = "true" ]
+if [ ! -z "$MSR_VISIBLE" ] && [ $MSR_VISIBLE = "true" ]
 then
   echo "$(date +"%Y-%m-%d %H:%M:%S,%3N") [INFO] Setting visible parameter"
   PARAMS="$PARAMS --visible"
@@ -53,7 +53,7 @@ then
   PARAMS="$PARAMS --discord $MSR_DISCORD"
 fi
 
-if [ ! -z "$MSG_VERBOSE_NOTIFY" ] && [ $MSG_VERBOSE_NOTIFY = "true" ]
+if [ ! -z "$MSR_VERBOSE_NOTIFY" ] && [ $MSR_VERBOSE_NOTIFY = "true" ]
 then
   echo "$(date +"%Y-%m-%d %H:%M:%S,%3N") [INFO] Setting verbose notifications"
   PARAMS="$PARAMS --verbosenotifs"
