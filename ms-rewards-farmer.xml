@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MS-Rewards-Farmer</Name>
+  <Repository>ghcr.io/ltcmdstone/ms-rewards-farmer-docker:latest</Repository>
+  <Registry/>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/LtCMDstone/MS-Rewards-Farmer-Docker/main/medal.png</Icon>
+  <ExtraParams>--shm-size=3gb</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Accounts JSON" Target="/app/accounts.json" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ms-rewards-farmer/accounts.json</Config>
+  <Config Name="Sessions folder" Target="/app/sessions" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/ms-rewards-farmer/sessions</Config>
+  <Config Name="logs folder" Target="/app/logs" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/ms-rewards-farmer/logs</Config>
+  <Config Name="tmp folder" Target="/tmp" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/ms-rewards-farmer/tmp</Config>
+  <Config Name="MSR_VISIBLE" Target="MSR_VISIBLE" Default="true" Mode="" Description="to disable headless (recommended)" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="MSR_LANG" Target="MSR_LANG" Default="" Mode="" Description="to force a language (ex: en)" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="MSR_GEO" Target="MSR_GEO" Default="" Mode="" Description="to force a geolocation (ex: US)" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="MSR_PROXY" Target="MSR_PROXY" Default="" Mode="" Description="to add a proxy to the whole program, supports http/https/socks4/socks5 (overrides per-account proxy in accounts.json) (ex: http://user:pass@host:port)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="MSR_TELEGRAM" Target="MSR_TELEGRAM" Default="" Mode="" Description="to add a telegram notification, requires Telegram Bot Token and Chat ID (ex: 123456789:ABCdefGhIjKlmNoPQRsTUVwxyZ 123456789)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="MSR_DISCORD" Target="MSR_DISCORD" Default="" Mode="" Description="to add a discord notification, requires Discord Webhook URL (ex: https://discord.com/api/webhooks/123456789/ABCdefGhIjKlmNoPQRsTUVwxyZ)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MSR_VERBOSE_NOTIFY" Target="MSR_VERBOSE_NOTIFY" Default="false" Mode="" Description="Optional: Send all the logs to discord/telegram" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+</Container>
