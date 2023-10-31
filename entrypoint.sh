@@ -10,9 +10,9 @@ else
   pip install --upgrade --root-user-action=ignore -r requirements.txt
 fi
 
-# clean up old xvfb file
+# clean up old runtime files
 echo "$(date +"%Y-%m-%d %H:%M:%S,%3N") [INFO] Cleaning up tmp folder"
-rm -rf /tmp/.X*-lock
+rm -rf /tmp/*
 
 # setting the parameter from enviroment variables
 PARAMS=""
