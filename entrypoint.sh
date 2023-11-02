@@ -9,8 +9,6 @@ else
   git pull
   pip install --upgrade --root-user-action=ignore -r requirements.txt
 fi
-git checkout 75de6f1 
-pip install --upgrade --root-user-action=ignore -r requirements.txt
 
 # clean up old runtime files
 echo "$(date +"%Y-%m-%d %H:%M:%S,%3N") [INFO] Cleaning up tmp folder"
