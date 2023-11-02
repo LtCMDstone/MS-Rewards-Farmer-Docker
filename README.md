@@ -148,5 +148,6 @@ In this table i will try to document possible issues and the solutions
 |Issue|possible solution|
 |-|-|
 |chrome version outdated|wait for new docker image release|
-|Tab crash mentioned in log|try to increase the shm-size
+|Tab crash mentioned in log|try to increase the shm-size|
+|no such window: target window already closed|try deleteing session and tmp folder|
 |...||
