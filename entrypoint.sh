@@ -12,7 +12,8 @@ fi
 
 # clean up old runtime files
 echo "$(date +"%Y-%m-%d %H:%M:%S,%3N") [INFO] Cleaning up tmp folder"
-rm -rf /tmp/.*
+rm -rf /tmp
+mkdir /tmp
 
 # setting the parameter from enviroment variables
 PARAMS=""
