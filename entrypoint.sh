@@ -2,8 +2,7 @@
 
 # clean up old runtime files
 echo "$(date +"%Y-%m-%d %H:%M:%S,%3N") [INFO] Cleaning up tmp folder"
-rm -rf /tmp
-mkdir /tmp
+rm -rf /tmp/* /tmp/.*
 
 # check for updates
 if [ $(git rev-parse HEAD) = $(git ls-remote $(git rev-parse --abbrev-ref @{u} | sed 's/\// /g') | cut -f1) ] 
