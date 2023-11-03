@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# clean up old runtime files
+echo "$(date +"%Y-%m-%d %H:%M:%S,%3N") [INFO] Cleaning up tmp folder"
+rm -rf /tmp
+mkdir /tmp
+
 # check for updates
 if [ $(git rev-parse HEAD) = $(git ls-remote $(git rev-parse --abbrev-ref @{u} | sed 's/\// /g') | cut -f1) ] 
 then 
@@ -9,11 +14,6 @@ else
   git pull
   pip install --upgrade --root-user-action=ignore -r requirements.txt
 fi
-
-# clean up old runtime files
-echo "$(date +"%Y-%m-%d %H:%M:%S,%3N") [INFO] Cleaning up tmp folder"
-rm -rf /tmp
-mkdir /tmp
 
 # setting the parameter from enviroment variables
 PARAMS=""
