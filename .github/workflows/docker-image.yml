@@ -2,12 +2,21 @@ name: MS-Rewards-Farmer-Docker build and push
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches: [ "main" ]
-
+    inputs:
+      chrome_version:
+        description: 'Chrome version'
+        required: true
+        type: string
+      chrome_url:
+        description: 'Chrome URL for download'
+        required: true
+        type: string
+  
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  MSR_CHROMEVERSION: ${{ inputs.chrome_version }}
+  CHROMEURL: ${{ inputs.chrome_url }}
   
 jobs:
   build:
@@ -34,4 +43,4 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-          tags: ${{ env.REGISTRY }}/${{ steps.string.outputs.lowercase }}
+          tags: ${{ env.REGISTRY }}/${{ steps.string.outputs.lowercase }}:${{ env.MSR_CHROMEVERSION }}
