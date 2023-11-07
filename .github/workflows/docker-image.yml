@@ -46,4 +46,4 @@ jobs:
             "CHROMEURL=${{ inputs.chrome_url }}"
           platforms: linux/amd64
           push: true
-          tags: ${{ env.REGISTRY }}/${{ steps.string.outputs.lowercase }}:${{ inputs.chrome_version }}
+          tags: ${{ env.REGISTRY }}/${{ steps.string.outputs.lowercase }}:${{ inputs.chrome_version }}, ${{ env.REGISTRY }}/${{ steps.string.outputs.lowercase }}:latest
