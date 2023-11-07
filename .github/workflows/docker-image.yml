@@ -41,6 +41,9 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
+          build-args: |
+            "CHROMEVERSION=${{ inputs.chrome_version }}"
+            "CHROMEURL=${{ inputs.chrome_url }}"
           platforms: linux/amd64
           push: true
-          tags: ${{ env.REGISTRY }}/${{ steps.string.outputs.lowercase }}:${{ env.MSR_CHROMEVERSION }}
+          tags: ${{ env.REGISTRY }}/${{ steps.string.outputs.lowercase }}:${{ inputs.chrome_version }}
