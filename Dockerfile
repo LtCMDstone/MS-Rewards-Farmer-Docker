@@ -1,10 +1,13 @@
 FROM python
 
-ENV MSR_CHROMEVERSION=${CHROMEVERSION}
-ENV CHROMEURL=${CHROMEURL}
+ARG CHROMEVERSION
+ARG CHROMEURL
+
+ENV MSR_CHROMEVERSION=$CHROMEVERSION
+ENV CHROMEDLURL=$CHROMEURL
 
 # download and install google chrome and xvfb
-RUN wget -O /tmp/chrome.deb $CHROMEURL
+RUN wget -O /tmp/chrome.deb $CHROMEDLURL
 RUN apt-get update && apt-get install -y /tmp/chrome.deb xvfb
 RUN google-chrome --version
 
