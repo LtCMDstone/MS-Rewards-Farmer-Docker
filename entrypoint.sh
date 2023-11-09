@@ -14,6 +14,13 @@ else
   pip install --upgrade --root-user-action=ignore -r requirements.txt
 fi
 
+if [ ! -z "$MSR_COMMIT" ]
+then
+  echo "$(date +"%Y-%m-%d %H:%M:%S,%3N") [INFO] Checking out at $MSR_COMMIT"
+  git checkout $MSR_COMMIT
+  pip install --upgrade --root-user-action=ignore -r requirements.txt
+fi
+
 # setting the parameter from enviroment variables
 PARAMS=""
 
