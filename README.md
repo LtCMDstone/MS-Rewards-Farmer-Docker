@@ -142,6 +142,7 @@ In this table all the available enviroment variables are listed
 |```MSR_TELEGRAM```|-t/--telegram|add a telegram notification, requires Telegram Bot Token and Chat ID (ex: ```123456789:ABCdefGhIjKlmNoPQRsTUVwxyZ 123456789```)|
 |```MSR_DISCORD```|-d/--discord|add a discord notification, requires Discord Webhook URL (ex: ```https://discord.com/api/webhooks/123456789/ABCdefGhIjKlmNoPQRsTUVwxyZ```)|
 |```MSR_VERBOSE_NOTIFY```|-vn/--verbosenotifs|```[true/false]``` verbose logs to notification listeners (discord, telegram)|
+|```MSR_COMMIT```|check out to previous commit (ex: ```2dd7d53```)|
 
 ### Issues
 In this table i will try to document possible issues and the solutions
