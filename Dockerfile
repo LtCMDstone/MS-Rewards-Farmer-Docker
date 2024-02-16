@@ -24,6 +24,8 @@ RUN pip install --root-user-action=ignore -r requirements.txt
 ENV DISPLAY=:99
 ENV DBUS_SESSION_BUS_ADDRESS=/dev/null
 
+RUN sed -i "s|download_url = \"https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/%s/%s/%s\"|download_url = \"https://storage.googleapis.com/chrome-for-testing-public/%s/%s/%s\"|g" /usr/local/lib/python3.10/dist-packages/undetected_chromedriver/patcher.py
+
 # copy entrypoint script
 COPY entrypoint.sh ./
 
